@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "PHIR SE"
+description = "An immersive Indian nostalgia experience where people choose a memory, enter its atmosphere, and discover the song that belongs there."
+version = "1.0.0"
+id = "artifacts/phir-se"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19403
+
+[services.development]
+run = "pnpm --filter @workspace/phir-se run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/phir-se", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/phir-se/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19403"
+BASE_PATH = "/"

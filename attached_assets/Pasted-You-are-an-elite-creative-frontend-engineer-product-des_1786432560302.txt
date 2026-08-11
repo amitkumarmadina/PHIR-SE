@@ -1,0 +1,2068 @@
+You are an elite creative frontend engineer, product designer, interaction designer, visual designer, and digital-art director with 10+ years of experience creating award-winning immersive websites, experimental digital experiences, music experiences, editorial websites, and premium consumer products.
+
+You are going to build a production-quality website called:
+
+============================================================
+PHIR SE
+============================================================
+
+TAGLINE:
+
+"Go back. Just for a song."
+
+CORE BRAND LINE:
+
+"Some memories never stop playing."
+
+CORE PRODUCT PHILOSOPHY:
+
+"Don't choose a song.
+Choose a memory."
+
+============================================================
+IMPORTANT — READ THIS BEFORE IMPLEMENTING
+============================================================
+
+PHIR SE is NOT a conventional music streaming website.
+
+It is NOT Spotify.
+
+It is NOT YouTube Music.
+
+It is NOT a playlist dashboard.
+
+It is NOT a generic nostalgia landing page.
+
+It is NOT a SaaS application.
+
+It is an immersive digital nostalgia experience.
+
+The purpose of PHIR SE is to make people feel that they have temporarily stepped into an old memory from their childhood or youth.
+
+The user should feel:
+
+"I didn't open a website.
+
+I opened a memory."
+
+The website combines:
+
+• Evergreen Indian music
+• 80s/90s/2000s nostalgia
+• Old Bollywood
+• Indian childhood memories
+• Neighbourhood places
+• Travel memories
+• Rain
+• Train journeys
+• Bus rides
+• Saloon/barber shops
+• Chai
+• First love
+• School memories
+• Old radio
+• Cassette tapes
+• Highway nights
+• Family memories
+• Monsoon
+• Weddings
+• Rooftops
+• Summer vacations
+
+The experience should feel:
+
+Cinematic.
+Warm.
+Emotional.
+Human.
+Indian.
+Nostalgic.
+Quiet.
+Premium.
+Handcrafted.
+Immersive.
+
+============================================================
+1. VISUAL REFERENCE
+============================================================
+
+I am providing a visual reference image for the intended PHIR SE aesthetic.
+
+Use the reference as creative direction for:
+
+• composition
+• visual hierarchy
+• nostalgia
+• typography
+• environment
+• music player
+• memory navigation
+• color treatment
+• cinematic atmosphere
+• UI restraint
+
+DO NOT simply copy the reference.
+
+Create an original implementation based on its design philosophy.
+
+The reference should guide the visual direction, not become a literal copy.
+
+============================================================
+2. THE MOST IMPORTANT DESIGN PRINCIPLE
+============================================================
+
+THE ENVIRONMENT IS THE PRODUCT.
+
+Do not design a normal website with a large background image behind UI.
+
+Instead:
+
+Build a cinematic environment and layer a restrained interface naturally over it.
+
+The user should feel:
+
+"I am inside this memory."
+
+NOT:
+
+"I am using a music application."
+
+Approximately:
+
+70–85% of the visual experience should be the memory/environment.
+
+15–30% should be UI.
+
+UI must remain secondary to the atmosphere.
+
+============================================================
+3. SINGLE PAGE EXPERIENCE
+============================================================
+
+PHIR SE should primarily be a single-page immersive experience.
+
+Do NOT create a conventional navbar.
+
+Do NOT create:
+
+Home
+About
+Services
+Pricing
+Blog
+Contact
+Testimonials
+FAQ
+etc.
+
+The entire website should feel like one continuous interactive scene.
+
+The primary screen contains:
+
+• PHIR SE branding
+• current memory
+• cinematic environment
+• previous/next navigation
+• memory drawer
+• music player
+• small presence indicator
+• subtle nostalgic details
+• understated footer/credits
+
+Everything should happen inside the same experience.
+
+============================================================
+4. THE CORE USER JOURNEY
+============================================================
+
+The user's journey should be:
+
+ENTER PHIR SE
+
+↓
+
+See a cinematic memory
+
+↓
+
+Read:
+
+"Choose a memory"
+
+↓
+
+Choose a place/memory
+
+↓
+
+Environment changes
+
+↓
+
+Music associated with that memory becomes available
+
+↓
+
+Press Play
+
+↓
+
+Music starts
+
+↓
+
+User stays
+
+↓
+
+User remembers something
+
+↓
+
+User explores another memory
+
+This should feel effortless.
+
+Do not make the user learn the application.
+
+============================================================
+5. MEMORY SYSTEM
+============================================================
+
+The core navigation concept is MEMORY, not PLAYLIST.
+
+Do not call the main categories "Playlists" in the UI.
+
+Call them:
+
+MEMORIES
+
+or:
+
+CHOOSE A MEMORY
+
+Possible memories:
+
+1. THE SALOON
+2. THE BUS WINDOW
+3. THE TRAIN RIDE
+4. THE RAINY EVENING
+5. FIRST LOVE
+6. THE OLD RADIO
+7. HIGHWAY RAAT
+8. SHAADI & SUNDAY
+9. 90s DARD
+10. THE STUDY TABLE
+11. CHILDHOOD SUMMER
+12. THE ROOFTOP
+13. CHAI AT 5 PM
+14. THE LAST BUS HOME
+
+Each memory represents:
+
+• a place
+• an emotion
+• an era
+• an environment
+• a musical mood
+• a visual atmosphere
+
+============================================================
+6. MEMORY EXAMPLES
+============================================================
+
+THE SALOON
+
+Subtitle:
+
+"Old school cuts & evergreen hits"
+
+Feeling:
+
+A neighbourhood barber shop in India around sunset.
+
+Visual details:
+
+• barber chair
+• barber
+• customer
+• people waiting
+• old newspaper
+• radio
+• mirror
+• old photographs
+• bottles
+• hanging bulb
+• ceiling fan
+• bicycle
+• chai stall
+• faded signboard
+• Indian street
+• sunset
+• old buildings
+• electric wires
+
+Music:
+
+Evergreen Bollywood / 90s Hindi.
+
+------------------------------------------------------------
+
+THE BUS WINDOW
+
+Subtitle:
+
+"Long rides, old songs & memories"
+
+Feeling:
+
+A child sitting beside a bus window during a long journey.
+
+Visual:
+
+• bus window
+• moving landscape
+• passing trees
+• sunlight
+• rain on glass
+• reflections
+• old seat fabric
+• highway
+• distant villages
+
+Music:
+
+Travel songs / nostalgic Bollywood.
+
+------------------------------------------------------------
+
+THE TRAIN RIDE
+
+Subtitle:
+
+"Platform chai & melodies"
+
+Visual:
+
+• railway platform
+• train window
+• chai
+• railway lights
+• luggage
+• station sign
+• moving scenery
+
+Music:
+
+Travel / nostalgia / old Hindi.
+
+------------------------------------------------------------
+
+THE RAINY EVENING
+
+Subtitle:
+
+"Wet streets, chai & nostalgia"
+
+Visual:
+
+• monsoon
+• rain
+• wet roads
+• reflections
+• chai glass
+• window
+• distant traffic
+• warm shop lights
+
+Music:
+
+Rain / romance / nostalgia.
+
+------------------------------------------------------------
+
+FIRST LOVE
+
+Subtitle:
+
+"Those sweet butterflies"
+
+Visual:
+
+• old school notebook
+• handwritten name
+• school corridor
+• bicycle
+• evening light
+• flowers
+• old photographs
+
+Music:
+
+Romantic 90s/2000s.
+
+------------------------------------------------------------
+
+THE OLD RADIO
+
+Subtitle:
+
+"Random songs like old times"
+
+Visual:
+
+• vintage radio
+• cassette
+• wooden table
+• old room
+• newspaper
+• warm lamp
+
+Music:
+
+Random evergreen songs.
+
+------------------------------------------------------------
+
+HIGHWAY RAAT
+
+Subtitle:
+
+"Dark roads, loud thoughts"
+
+Visual:
+
+• night highway
+• headlights
+• dashboard
+• rain
+• distant lights
+• empty road
+
+Music:
+
+Late-night nostalgic / melancholic songs.
+
+------------------------------------------------------------
+
+SHAADI & SUNDAY
+
+Subtitle:
+
+"Band, baraat & good vibes"
+
+Visual:
+
+• Indian wedding
+• lights
+• marigolds
+• family
+• dancing
+• old wedding photography aesthetic
+
+Music:
+
+Celebration / wedding classics.
+
+------------------------------------------------------------
+
+90s DARD
+
+Subtitle:
+
+"Dil ke kone wale gaane"
+
+Visual:
+
+• dark bedroom
+• cassette
+• window
+• rain
+• handwritten diary
+• old photographs
+
+Music:
+
+90s heartbreak songs.
+
+------------------------------------------------------------
+
+THE STUDY TABLE
+
+Subtitle:
+
+"Late nights & dreams"
+
+Visual:
+
+• old study table
+• textbooks
+• desk lamp
+• pen
+• notebooks
+• cassette
+• window
+• night sky
+
+Music:
+
+Quiet nostalgic songs.
+
+------------------------------------------------------------
+
+CHILDHOOD SUMMER
+
+Subtitle:
+
+"Mangoes, holidays & afternoons"
+
+Visual:
+
+• summer afternoon
+• mango tree
+• terrace
+• old house
+• cricket bat
+• steel glass
+• cooler
+• sunlight
+
+Music:
+
+Happy nostalgic songs.
+
+------------------------------------------------------------
+
+THE ROOFTOP
+
+Subtitle:
+
+"Stars, silence & old songs"
+
+Visual:
+
+• Indian rooftop
+• stars
+• water tank
+• clothesline
+• distant city
+• evening sky
+
+Music:
+
+Slow peaceful nostalgic songs.
+
+============================================================
+7. DESKTOP COMPOSITION
+============================================================
+
+On desktop, think of the website as a cinematic poster.
+
+LEFT:
+
+Memory drawer.
+
+CENTER:
+
+Massive environment.
+
+TOP CENTER:
+
+PHIR SE.
+
+TOP RIGHT:
+
+Small presence indicator.
+
+LEFT/RIGHT EDGES:
+
+Previous/next memory arrows.
+
+BOTTOM:
+
+Persistent music player.
+
+BOTTOM EDGE:
+
+Very subtle footer/credit.
+
+The environment should occupy most of the screen.
+
+Avoid making everything look like cards.
+
+============================================================
+8. MOBILE COMPOSITION
+============================================================
+
+Mobile is extremely important.
+
+The primary target device is a smartphone.
+
+Design intentionally for:
+
+320px
+360px
+375px
+390px
+412px
+430px
+
+Do NOT simply shrink the desktop UI.
+
+Mobile composition:
+
+TOP:
+
+Small time / brand / presence.
+
+CENTER:
+
+Immersive environment.
+
+CENTER LOWER:
+
+Memory title.
+
+SIDE:
+
+Previous / next controls.
+
+BOTTOM:
+
+Music player.
+
+CORNER:
+
+Memory drawer button.
+
+The memory drawer should become a smooth slide-out panel.
+
+No horizontal overflow.
+
+No broken layouts.
+
+No tiny controls.
+
+Everything should be thumb-friendly.
+
+============================================================
+9. PHIR SE BRANDING
+============================================================
+
+The brand should be extremely memorable.
+
+Main title:
+
+PHIR SE
+
+Subtitle:
+
+"Go back. Just for a song."
+
+Use typography inspired by:
+
+• old Indian cinema
+• editorial magazines
+• old radio
+• vintage record labels
+• Indian signboards
+• premium modern typography
+
+Possible Devanagari treatment may be used subtly.
+
+Do NOT make it look like a Bollywood fan website.
+
+It should feel modern + nostalgic.
+
+============================================================
+10. COLOR SYSTEM
+============================================================
+
+Primary visual palette:
+
+• deep brown
+• dark chocolate
+• tobacco
+• burnt orange
+• muted red
+• dusty gold
+• aged cream
+• charcoal
+• faded olive
+• warm beige
+
+The palette should resemble:
+
+old photographs
++
+Indian cinema posters
++
+aged paper
++
+cassette covers
++
+sunset light
+
+Avoid:
+
+• neon
+• cyberpunk
+• bright purple gradients
+• blue SaaS gradients
+• excessive glassmorphism
+• bright modern dashboard colors
+
+The interface should feel analog and warm.
+
+============================================================
+11. TEXTURE
+============================================================
+
+Use subtle visual texture.
+
+Possible effects:
+
+• film grain
+• paper texture
+• halftone
+• faded print
+• dust
+• subtle vignette
+• old-film imperfections
+• very subtle chromatic imperfection
+
+IMPORTANT:
+
+The texture must feel premium.
+
+Do not make the site look dirty.
+
+Do not add obvious filters over everything.
+
+The texture should be felt more than noticed.
+
+============================================================
+12. TYPOGRAPHY
+============================================================
+
+Use a strong typography system.
+
+Recommended combination:
+
+Display:
+
+Elegant expressive serif / vintage display type.
+
+UI:
+
+Clean modern sans-serif.
+
+Optional:
+
+Devanagari display typography.
+
+Typography should resemble:
+
+Old Indian film posters
++
+magazine editorial
++
+radio labels
++
+modern luxury design.
+
+Do not use generic typography everywhere.
+
+Avoid making every heading bold.
+
+Use whitespace and hierarchy.
+
+============================================================
+13. MEMORY DRAWER
+============================================================
+
+A memory drawer must exist in the LEFT CORNER.
+
+Desktop:
+
+Vertical memory archive.
+
+Mobile:
+
+Slide-out drawer.
+
+Header:
+
+CHOOSE A MEMORY
+
+Subheading:
+
+"Pick a place. Hear the feeling."
+
+Each memory contains:
+
+• thumbnail
+• title
+• one-line emotional description
+
+Example:
+
+THE SALOON
+Old school cuts & evergreen hits
+
+THE BUS WINDOW
+Long rides, old songs & memories
+
+THE TRAIN RIDE
+Platform chai & melodies
+
+THE RAINY EVENING
+Wet streets, chai & nostalgia
+
+FIRST LOVE
+Those sweet butterflies
+
+THE OLD RADIO
+Random songs like old times
+
+HIGHWAY RAAT
+Dark roads, loud thoughts
+
+SHAADI & SUNDAY
+Band, baraat & good vibes
+
+90s DARD
+Dil ke kone wale gaane
+
+THE STUDY TABLE
+Late nights & dreams
+
+CHILDHOOD SUMMER
+Mangoes, holidays & afternoons
+
+THE ROOFTOP
+Stars, silence & old songs
+
+The active item should have:
+
+• subtle warm accent
+• small movement
+• slight image scale
+• thin accent line
+
+Do NOT turn these into standard app cards.
+
+Make them resemble an old record/archive collection.
+
+============================================================
+14. MEMORY NAVIGATION
+============================================================
+
+Provide elegant previous/next controls.
+
+Left arrow:
+
+Previous memory.
+
+Right arrow:
+
+Next memory.
+
+When changing memory:
+
+Do not instantly replace the scene.
+
+Use a cinematic transition.
+
+Recommended:
+
+500–900ms.
+
+Possible:
+
+• crossfade
+• image dissolve
+• slight scale
+• subtle horizontal movement
+• grain transition
+• light sweep
+
+The transition should feel like:
+
+turning a page in an old photo album.
+
+Not like switching slides in PowerPoint.
+
+============================================================
+15. MUSIC PLAYER
+============================================================
+
+The bottom player is one of the most important components.
+
+It should feel like:
+
+an old cassette/radio player redesigned with modern UX.
+
+NOT Spotify.
+
+Desktop:
+
+Large floating horizontal player.
+
+Mobile:
+
+Compact floating bottom player.
+
+Include:
+
+• artwork
+• title
+• artist
+• album/year
+• play/pause
+• previous
+• next
+• progress
+• elapsed time
+• duration
+• favorite
+• volume
+• optional shuffle/repeat
+
+Example:
+
+Saaton Janam Main Tere
+
+Kumar Sanu, Alka Yagnik
+
+Hum Saath-Saath Hain (1999)
+
+The artwork should have subtle movement when playing.
+
+The player must remain persistent when navigating between memories.
+
+============================================================
+16. MUSIC PHILOSOPHY
+============================================================
+
+PHIR SE does NOT ask:
+
+"What song do you want?"
+
+It asks:
+
+"Where do you want to go?"
+
+Therefore:
+
+DO NOT add a conventional global music search bar.
+
+DO NOT make the homepage look like Spotify.
+
+Users discover music through:
+
+• memories
+• places
+• moods
+• eras
+• emotions
+
+The user selects:
+
+THE SALOON
+
+and PHIR SE takes them there.
+
+============================================================
+17. MUSIC DATA ARCHITECTURE
+============================================================
+
+Create a clean structured music system.
+
+Use:
+
+Memory
+Track
+Playlist/Collection
+
+Example:
+
+Memory:
+
+{
+  id,
+  title,
+  subtitle,
+  description,
+  image,
+  thumbnail,
+  atmosphere,
+  tracks: []
+}
+
+Track:
+
+{
+  id,
+  title,
+  artist,
+  album,
+  year,
+  artwork,
+  youtubeId,
+  source
+}
+
+Keep all music metadata separate from UI components.
+
+============================================================
+18. MUSIC IMPLEMENTATION
+============================================================
+
+IMPORTANT COPYRIGHT/TECHNICAL RULE:
+
+Do NOT download copyrighted songs.
+
+Do NOT scrape YouTube audio.
+
+Do NOT extract MP3 files from YouTube.
+
+Do NOT host copyrighted music locally.
+
+Do NOT assume that using an API gives permission to redistribute music.
+
+The architecture should use official/legal playback mechanisms.
+
+For the prototype:
+
+Use clearly marked demo/sample audio or placeholder YouTube video IDs.
+
+Design the player abstraction so it can later support:
+
+• YouTube embedded playback
+• licensed audio
+• royalty-free audio
+• legally hosted music
+• other permitted providers
+
+The UI should not depend directly on a specific music provider.
+
+============================================================
+19. YOUTUBE API STRATEGY
+============================================================
+
+Do NOT dynamically search YouTube every time a user opens a memory.
+
+Instead:
+
+PHIR SE memory
+↓
+curated track list
+↓
+YouTube video ID
+↓
+YouTube embedded player
+
+The YouTube Data API may later be used for a private curator/admin tool.
+
+For example:
+
+Admin searches:
+
+"Saaton Janam Main Tere Kumar Sanu"
+
+↓
+
+YouTube API returns search results
+
+↓
+
+Admin chooses correct result
+
+↓
+
+Video ID is saved
+
+↓
+
+Song is assigned to:
+
+THE SALOON
+
+90s DARD
+
+etc.
+
+This admin tool is NOT part of the public MVP.
+
+Only design the data architecture so it can be added later.
+
+============================================================
+20. FUTURE CURATOR SYSTEM
+============================================================
+
+Prepare the architecture for a future private music curator dashboard.
+
+Future capabilities:
+
+• search YouTube
+• view results
+• choose video
+• save video ID
+• edit metadata
+• upload artwork
+• assign track to memories
+• reorder tracks
+• remove tracks
+
+Example:
+
+Search:
+
+"Saaton Janam Main Tere"
+
+↓
+
+Results
+
+↓
+
+[ADD TO PHIR SE]
+
+↓
+
+Assign:
+
+☑ The Saloon
+☑ 90s Dard
+☐ Highway Raat
+
+↓
+
+SAVE
+
+Do NOT build this dashboard now.
+
+Keep the public MVP simple.
+
+============================================================
+21. MUSIC PLAYER BEHAVIOR
+============================================================
+
+When the user selects a memory:
+
+Load that memory's curated track collection.
+
+For MVP:
+
+Changing memory should load the first curated track.
+
+Do not force autoplay if browser policies prevent it.
+
+User must intentionally press Play.
+
+Once playing, the player remains persistent while navigating.
+
+If a user moves between memories, update the track accordingly.
+
+The music player should never dominate the screen.
+
+============================================================
+22. ATMOSPHERIC ANIMATION
+============================================================
+
+Each memory should have subtle environment-specific movement.
+
+THE SALOON:
+
+• ceiling fan
+• hanging bulb flicker
+• dust
+• subtle street movement
+
+BUS WINDOW:
+
+• moving scenery
+• window reflections
+• sunlight
+• road vibration
+
+TRAIN:
+
+• moving background
+• passing lights
+• subtle train motion
+
+RAIN:
+
+• rain
+• reflections
+• condensation
+
+HIGHWAY:
+
+• moving lights
+• road movement
+• subtle dashboard glow
+
+ROOFTOP:
+
+• stars
+• clouds
+• subtle breeze
+
+IMPORTANT:
+
+Animation must remain subtle.
+
+No excessive motion.
+
+No distracting effects.
+
+Respect:
+
+prefers-reduced-motion.
+
+============================================================
+23. PRESENCE INDICATOR
+============================================================
+
+Include a small atmospheric presence indicator.
+
+Example:
+
+● 23 people are here
+
+This is NOT an analytics dashboard.
+
+It should feel like:
+
+"Other people are listening too."
+
+If there is no real backend presence system yet, use a clearly simulated/demo value.
+
+Do not pretend the number is real.
+
+Make the architecture ready for a future realtime presence system.
+
+============================================================
+24. NOSTALGIC MICRO DETAILS
+============================================================
+
+Add subtle Easter eggs.
+
+Possible:
+
+• cassette icon
+• REC ●
+• SIDE A
+• SIDE B
+• ON AIR
+• STEREO
+• fictional radio frequency
+• old timestamp
+• tiny Devanagari notes
+• faded date
+• handwritten annotation
+• cassette label
+• tiny radio indicator
+
+These should be discovered naturally.
+
+Do not overcrowd the UI.
+
+============================================================
+25. FOOTER
+============================================================
+
+The footer should take inspiration from the understated nostalgic philosophy of the reference site.
+
+Do NOT create a corporate footer.
+
+Use a minimal cinematic credit section.
+
+Possible:
+
+© 2026 PHIR SE
+
+Made with ♥ for the old souls.
+
+Developed by Amit Kumar Madina
+
+AKM
+
+Add a tiny cassette icon.
+
+Possible additional line:
+
+"Some memories never stop playing."
+
+or:
+
+"Built for the songs that stayed."
+
+The footer should feel like the closing credits of an old movie.
+
+============================================================
+26. INTERACTION DESIGN
+============================================================
+
+Micro-interactions should be polished.
+
+Buttons:
+
+• subtle hover
+• slight scale
+• opacity transition
+
+Memory selection:
+
+• image scale 1.03x
+• title shift
+• accent line
+• gentle transition
+
+Music:
+
+• artwork subtle motion
+• play/pause animation
+• progress animation
+
+Arrows:
+
+• slight directional movement
+
+Drawer:
+
+• smooth slide
+• subtle blur
+• gentle background transition
+
+Do not make interactions flashy.
+
+============================================================
+27. LOADING EXPERIENCE
+============================================================
+
+Create a short cinematic loading experience.
+
+Possible:
+
+PHIR SE
+
+"Loading a memory..."
+
+or:
+
+"Finding an old song..."
+
+Then transition into the first scene.
+
+Do not make the loading screen long.
+
+It should feel intentional rather than like a technical loading screen.
+
+============================================================
+28. ERROR / EMPTY STATES
+============================================================
+
+If a track cannot load:
+
+Do not show a generic:
+
+"Error 404."
+
+Instead use language consistent with the brand.
+
+Example:
+
+"That tape seems to have gone quiet."
+
+Then provide:
+
+"Try another song"
+
+The application must still remain functional.
+
+============================================================
+29. RESPONSIVENESS
+============================================================
+
+Test carefully across:
+
+320px
+360px
+375px
+390px
+412px
+430px
+768px
+1024px
+1280px
+1440px
+1920px
+
+Mobile:
+
+• memory drawer becomes overlay
+• player becomes compact
+• typography scales
+• environment remains dominant
+• controls remain accessible
+
+Tablet:
+
+Balanced composition.
+
+Desktop:
+
+Cinematic full-width experience.
+
+Large desktop:
+
+Do not simply stretch everything.
+
+Keep visual hierarchy controlled.
+
+============================================================
+30. ACCESSIBILITY
+============================================================
+
+Use:
+
+• semantic HTML
+• real buttons
+• keyboard navigation
+• aria-labels
+• alt text
+• focus states
+• accessible contrast
+• reduced motion
+• screen-reader-friendly controls
+
+Do not sacrifice accessibility for visual design.
+
+============================================================
+31. TECH STACK
+============================================================
+
+Use:
+
+React
+Vite
+TypeScript
+Tailwind CSS
+
+Use Motion / Framer Motion only where it materially improves transitions.
+
+Use Lucide icons or another lightweight icon library.
+
+Avoid unnecessary dependencies.
+
+Do NOT introduce a huge state-management framework.
+
+Use React state/context or a lightweight approach.
+
+============================================================
+32. CODE ARCHITECTURE
+============================================================
+
+The code will later be opened in:
+
+VS Code
+
+and
+
+Antigravity.
+
+Therefore, code quality and organization are extremely important.
+
+DO NOT create one enormous component.
+
+Use a clean architecture such as:
+
+src/
+
+  components/
+
+    Brand/
+    MemoryScene/
+    MemoryDrawer/
+    MemoryNavigation/
+    MemoryTitle/
+    MusicPlayer/
+    PresenceIndicator/
+    NostalgiaDetails/
+    Footer/
+
+  data/
+
+    memories.ts
+    tracks.ts
+
+  hooks/
+
+    useMemory.ts
+    usePlayer.ts
+
+  utils/
+
+  assets/
+
+  styles/
+
+Separate:
+
+DATA
+LOGIC
+UI
+ANIMATION
+
+Make components reusable.
+
+============================================================
+33. STATE
+============================================================
+
+Required state:
+
+currentMemory
+currentTrack
+isPlaying
+progress
+volume
+isDrawerOpen
+
+Do not use Redux unless genuinely necessary.
+
+Keep state architecture simple.
+
+============================================================
+34. DATA-FIRST DESIGN
+============================================================
+
+Do NOT hardcode memories directly inside components.
+
+Use structured data.
+
+Example:
+
+const memories = [
+  {
+    id: "saloon",
+    title: "The Saloon",
+    subtitle: "Old school cuts & evergreen hits",
+    description: "That little barber shop around the corner.",
+    image: "/memories/saloon.webp",
+    thumbnail: "/memories/saloon-thumb.webp",
+    tracks: ["track-001", "track-002"]
+  }
+];
+
+This should make it extremely easy to add new memories later.
+
+============================================================
+35. IMAGE SYSTEM
+============================================================
+
+The website will eventually use custom artwork for every memory.
+
+Create the code so images can easily be replaced.
+
+Use:
+
+• WebP
+• AVIF where appropriate
+• responsive image sizes
+• lazy loading
+• preloading of adjacent memories
+
+Only preload:
+
+current memory
++
+previous memory
++
+next memory
+
+Do not load every huge image at startup.
+
+============================================================
+36. PERFORMANCE
+============================================================
+
+The website must run smoothly on mid-range Android devices.
+
+Prioritize:
+
+• 60fps animations where practical
+• CSS transforms
+• optimized images
+• lazy loading
+• limited DOM complexity
+• efficient React rendering
+• pause unnecessary animation when tab is hidden
+• reduced motion
+• minimal dependencies
+
+Do not sacrifice performance for unnecessary visual effects.
+
+============================================================
+37. SEO
+============================================================
+
+Even though the website is experimental, implement basic SEO.
+
+Title:
+
+PHIR SE — Go Back. Just for a Song.
+
+Description:
+
+"PHIR SE is an immersive nostalgia experience where every memory has a song."
+
+Include:
+
+• favicon
+• Open Graph metadata
+• Twitter/X metadata
+• semantic headings
+• meaningful document title
+
+============================================================
+38. PWA-READY ARCHITECTURE
+============================================================
+
+Do not necessarily implement full offline functionality now.
+
+But keep the architecture compatible with a future PWA.
+
+The website should eventually be installable on mobile.
+
+============================================================
+39. NO UNNECESSARY FEATURES
+============================================================
+
+Do NOT add:
+
+❌ Login
+❌ Signup
+❌ User profiles
+❌ Comments
+❌ Likes feed
+❌ Social network
+❌ Chat
+❌ Pricing
+❌ Subscription
+❌ Dashboard
+❌ Search page
+❌ Blog
+❌ Newsletter popup
+❌ Notifications
+❌ AI chatbot
+❌ Generic recommendation engine
+
+PHIR SE is about simplicity.
+
+============================================================
+40. DO NOT MAKE IT LOOK LIKE
+============================================================
+
+Do NOT make PHIR SE resemble:
+
+Spotify
+YouTube Music
+JioSaavn
+Gaana
+Apple Music
+Netflix
+a SaaS dashboard
+a generic AI website
+a modern startup landing page
+
+Avoid:
+
+❌ excessive cards
+❌ neon gradients
+❌ glassmorphism everywhere
+❌ huge glowing CTA buttons
+❌ generic modern hero
+❌ excessive drop shadows
+❌ generic Inter typography
+❌ blue/purple AI gradients
+❌ dashboard-style layouts
+
+============================================================
+41. DESIGN QUALITY BAR
+============================================================
+
+The quality target is:
+
+Awwwards-level visual craftsmanship.
+
+CSS Design Awards-level polish.
+
+FWA-style experimental thinking.
+
+Behance-quality art direction.
+
+But:
+
+DO NOT sacrifice usability for visual experimentation.
+
+The final product must balance:
+
+ART
++
+UX
++
+EMOTION
++
+PERFORMANCE
++
+ACCESSIBILITY
++
+ENGINEERING
+
+============================================================
+42. EMOTIONAL TEST
+============================================================
+
+Before considering the site complete, ask:
+
+"If someone who grew up listening to Indian Bollywood songs opens PHIR SE late at night, selects THE BUS WINDOW, sees the scene, hears an old song and watches the environment move, does it make them remember something?"
+
+If the answer is no:
+
+DO NOT add more UI.
+
+Instead improve:
+
+• atmosphere
+• lighting
+• typography
+• artwork
+• animation
+• transitions
+• sound experience
+• emotional copy
+
+The goal is emotional memory.
+
+============================================================
+43. FIRST IMPLEMENTATION PRIORITY
+============================================================
+
+Fully polish THE SALOON first.
+
+It should feel like a complete finished experience.
+
+Then implement the other memories using the same architecture.
+
+THE SALOON should contain:
+
+• cinematic Indian barber shop
+• sunset
+• old signboard
+• barber chair
+• barber
+• waiting customers
+• old newspaper
+• radio
+• bottles
+• mirror
+• ceiling fan
+• chai
+• bicycle
+• street
+• warm lighting
+• subtle grain
+• subtle motion
+
+Title:
+
+THE SALOON
+
+Subtitle:
+
+Old school cuts & evergreen hits
+
+============================================================
+44. INITIAL TRACK DATA
+============================================================
+
+Create a realistic demo catalogue structure.
+
+Use placeholder/demo track entries where actual playback rights are not available.
+
+Do NOT fabricate real YouTube video IDs.
+
+Mark placeholder IDs clearly.
+
+Example:
+
+youtubeId: null
+
+source: "demo"
+
+The player should gracefully handle missing sources.
+
+Do not make the application depend on fake URLs.
+
+============================================================
+45. FUTURE EXPANSION
+============================================================
+
+The architecture should allow PHIR SE to eventually support:
+
+• 20+ memories
+• hundreds of curated tracks
+• real-time presence
+• admin curator dashboard
+• YouTube integration
+• licensed music
+• Spotify links
+• PWA
+• user favorites
+• shareable memories
+• "send this memory to someone"
+• dynamic time-based moods
+
+But NONE of these should clutter the first version.
+
+============================================================
+46. IMPORTANT PRODUCT RULE
+============================================================
+
+PHIR SE should never feel like:
+
+"Here is a database of old songs."
+
+It should feel like:
+
+"Here is a door to an old memory."
+
+The difference is everything.
+
+============================================================
+47. FINAL VISUAL HIERARCHY
+============================================================
+
+Priority:
+
+1. MEMORY ENVIRONMENT
+2. MUSIC
+3. PHIR SE BRAND
+4. MEMORY TITLE
+5. MEMORY NAVIGATION
+6. PLAYER CONTROLS
+7. SUPPORTING INFORMATION
+8. FOOTER
+
+Never allow UI controls to overpower the artwork.
+
+============================================================
+48. FINAL BRAND EXPERIENCE
+============================================================
+
+The website should communicate:
+
+PHIR SE
+
+Go back.
+Just for a song.
+
+Choose a memory.
+
+Enter.
+
+Listen.
+
+Remember.
+
+============================================================
+49. IMPLEMENTATION PROCESS
+============================================================
+
+Work in this order:
+
+STEP 1
+Initialize React + Vite + TypeScript.
+
+STEP 2
+Create the design system.
+
+STEP 3
+Create the structured memory and track data.
+
+STEP 4
+Build the full-screen MemoryScene.
+
+STEP 5
+Build THE SALOON completely.
+
+STEP 6
+Build MemoryDrawer.
+
+STEP 7
+Build previous/next navigation.
+
+STEP 8
+Build MusicPlayer.
+
+STEP 9
+Build memory transitions.
+
+STEP 10
+Build atmospheric effects.
+
+STEP 11
+Build responsive mobile layout.
+
+STEP 12
+Build footer and nostalgic micro-details.
+
+STEP 13
+Optimize performance.
+
+STEP 14
+Add accessibility.
+
+STEP 15
+Add SEO.
+
+STEP 16
+Test every breakpoint.
+
+STEP 17
+Perform a second visual polish pass.
+
+DO NOT stop after the first functional implementation.
+
+============================================================
+50. IMPORTANT REPLIT AGENT BEHAVIOR
+============================================================
+
+Do not spend the entire response explaining what you intend to build.
+
+Start implementing.
+
+Create the actual project.
+
+Create the files.
+
+Run the application.
+
+Inspect the result.
+
+Fix errors.
+
+Improve the visual design.
+
+Iterate.
+
+If an asset is unavailable, use a tasteful placeholder rather than
+breaking the application.
+
+If a dependency creates unnecessary complexity, remove it.
+
+Keep the code readable and maintainable.
+
+============================================================
+51. FINAL QUALITY CHECK
+============================================================
+
+Before declaring the implementation complete, verify:
+
+[ ] Website runs without errors
+[ ] No horizontal overflow
+[ ] Mobile works at 320px+
+[ ] Desktop composition is cinematic
+[ ] Memory drawer works
+[ ] Previous/next works
+[ ] Memory transitions work
+[ ] Music player works with available demo sources
+[ ] Missing music sources fail gracefully
+[ ] Data is separated from components
+[ ] Animations are smooth
+[ ] Reduced motion is supported
+[ ] Keyboard navigation works
+[ ] Accessibility labels exist
+[ ] Images are optimized/lazy loaded
+[ ] Adjacent memory preloading works
+[ ] Footer exists
+[ ] PHIR SE branding is prominent but restrained
+[ ] No conventional navbar
+[ ] No conventional search bar
+[ ] No unnecessary dashboard UI
+[ ] No generic SaaS aesthetic
+[ ] No fake YouTube IDs
+[ ] No copyrighted audio is downloaded or hosted
+[ ] Code is ready for future YouTube/API integration
+[ ] Code is easy to continue editing in VS Code/Antigravity
+
+============================================================
+52. THE FINAL CREATIVE TEST
+============================================================
+
+When everything is complete, imagine a user opening PHIR SE at 11:47 PM.
+
+They see:
+
+PHIR SE
+
+"Go back. Just for a song."
+
+They choose:
+
+THE BUS WINDOW.
+
+The screen slowly transforms.
+
+The road begins moving.
+
+Rain touches the glass.
+
+An old song begins.
+
+The music player glows softly.
+
+There are no distractions.
+
+The user looks at the scene.
+
+And for a moment they remember:
+
+a childhood journey,
+their parents,
+an old bus,
+a summer vacation,
+a school trip,
+someone they loved,
+or a time that no longer exists.
+
+THAT is the product.
+
+Not the player.
+
+Not the API.
+
+Not the code.
+
+THE FEELING.
+
+Build for that feeling.
+
+============================================================
+
+FINAL BRAND:
+
+PHIR SE
+
+"Go back. Just for a song."
+
+"Some memories never stop playing."
+
+"Don't choose a song. Choose a memory."
+
+Now build it.
