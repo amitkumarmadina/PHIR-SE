@@ -1,0 +1,7 @@
+{
+  "buildCommand": "pnpm --filter @workspace/phir-se build",
+  "outputDirectory": "artifacts/phir-se/dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
