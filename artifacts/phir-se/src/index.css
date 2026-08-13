@@ -322,15 +322,25 @@
 }
 
 * { box-sizing: border-box; }
-html, body, #root { min-width: 320px; min-height: 100%; }
-body { overflow-x: hidden; background: #0a0a0a; }
+html, body, #root {
+  min-width: 320px;
+  width: 100%;
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+body { overflow: hidden; background: #0a0a0a; }
 button { font: inherit; }
 button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 4px; }
 
 /* ─── App Shell ───────────────────────────────────── */
 .phir-se-app {
   position: relative;
-  min-height: 100dvh;
+  height: 100dvh;
+  width: 100vw;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -602,14 +612,18 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
 
 /* ─── Center Hero ────────────────────────────────── */
 .hero-content {
-  position: relative;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
-  margin-top: 22vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 24px;
+  padding: 0 20px;
   text-align: center;
+  width: min(92vw, 980px);
+  pointer-events: none;
 }
 .hero-title {
   font-family: var(--font-sans), var(--font-serif), sans-serif;
@@ -1190,23 +1204,32 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
 @keyframes spin-vinyl { to { transform: rotate(360deg); } }
 
 /* ══════════════════════════════════════════════════════
-   RESPONSIVE DESIGN — Tablet & Mobile
+   RESPONSIVE DESIGN — Multi-device Layout System
    ══════════════════════════════════════════════════════ */
 
-/* ─── Tablet (≤ 1024px) ──────────────────────────── */
+/* ─── Ultra-Wide & Large Desktop (> 1440px) ────────── */
+@media (min-width: 1441px) {
+  .hero-content { top: 38%; }
+  .hero-title.hindi-classic { font-size: clamp(64px, 9vw, 150px); }
+  .tape-player { width: min(680px, 50vw); }
+}
+
+/* ─── Tablet (769px – 1024px) ──────────────────────── */
 @media (max-width: 1024px) {
-  .topbar { padding: 16px 20px; }
+  .topbar { padding: 14px 20px; }
   .top-center { font-size: 12px; }
   .edge-arrow-btn { width: 46px; height: 46px; }
   .edge-arrow-left { left: 16px; }
   .edge-arrow-right { right: 16px; }
-  .social-glass-dock { right: 16px; bottom: 28px; }
-  .tape-player { width: min(520px, calc(100% - 40px)); }
+  .social-glass-dock { right: 16px; bottom: 24px; }
+  .tape-player {
+    width: min(560px, calc(100vw - 32px));
+    bottom: 20px;
+  }
 }
 
 /* ─── Mobile (≤ 768px) ───────────────────────────── */
 @media (max-width: 768px) {
-  /* Header: stack vertically, hide non-essential items */
   .topbar {
     padding: 12px 14px;
     flex-wrap: wrap;
@@ -1234,7 +1257,6 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
     font-size: 11px;
     margin-top: 2px;
   }
-  /* Hide nav pills — use drawer hamburger instead */
   .top-right {
     gap: 6px;
   }
@@ -1245,32 +1267,33 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
     padding: 8px 10px;
     gap: 0;
   }
-  /* Hide Spotify/YT Music text but keep icons */
   .nav-pill-spotify span,
   .nav-pill-ytmusic span {
     display: none !important;
   }
 
-  /* Hero: move up, size down */
+  /* Hero */
   .hero-content {
-    margin-top: 16vh;
-    padding: 0 16px;
+    top: 36%;
+    width: 94vw;
+    padding: 0 12px;
   }
   .hero-title {
-    font-size: clamp(28px, 9vw, 56px) !important;
+    font-size: clamp(26px, 8.5vw, 54px) !important;
   }
   .hero-title.hindi-classic {
-    font-size: clamp(38px, 14vw, 90px) !important;
+    font-size: clamp(36px, 12.5vw, 84px) !important;
     transform: rotate(-0.5deg);
   }
   .hero-subtitle {
     font-size: 10px;
     letter-spacing: 0.12em;
-    padding: 3px 10px;
+    padding: 3px 12px;
     margin-top: 10px;
+    max-width: 88vw;
   }
 
-  /* Edge Arrows: smaller, tighter */
+  /* Edge Arrows */
   .edge-arrow-btn {
     width: 40px;
     height: 40px;
@@ -1278,20 +1301,16 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
   .edge-arrow-left { left: 8px; }
   .edge-arrow-right { right: 8px; }
 
-  /* Archive trigger */
-  .archive-trigger {
-    top: 12px;
-    right: 14px;
-    font-size: 11px;
-  }
-
-  /* Player: compact mobile layout */
+  /* Player: strictly centered compact mobile layout */
   .tape-player {
-    bottom: 16px;
-    width: calc(100% - 24px);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 14px;
+    width: calc(100vw - 20px);
     padding: 8px 12px 8px 8px;
     gap: 10px;
-    border-radius: 20px;
+    border-radius: 24px;
   }
   .player-vinyl {
     width: 48px;
@@ -1308,7 +1327,7 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
     font-size: 11px;
   }
   .player-seek {
-    margin-top: 5px;
+    margin-top: 4px;
   }
   .player-time {
     font-size: 10px;
@@ -1322,12 +1341,12 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
     height: 30px;
   }
   .player-controls {
-    gap: 2px;
+    gap: 3px;
   }
 
   /* Memory indicator */
   .memory-indicator {
-    bottom: 85px;
+    bottom: 78px;
     font-size: 11px;
     padding: 3px 10px;
   }
@@ -1335,32 +1354,35 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
   /* Scene stamp */
   .scene-stamp {
     left: 14px;
-    bottom: 80px;
+    bottom: 76px;
     font-size: 9px;
   }
 
-  /* Social dock: smaller, move above player */
+  /* Social dock: compact, floating cleanly above player bar */
   .social-glass-dock {
     right: 12px;
-    bottom: 80px;
+    bottom: 76px;
     padding: 4px 8px;
-    gap: 5px;
+    gap: 4px;
   }
   .social-glass-btn {
     width: 30px;
     height: 30px;
   }
 
-  /* Drawer: full-width on small screens */
+  /* Drawer: full screen on mobile devices */
   .memory-drawer {
-    width: min(360px, 90vw);
-    padding: 24px 18px 20px 22px;
+    width: 100vw;
+    max-width: 100vw;
+    inset: 0 0 0 0;
+    padding: 24px 18px 20px 20px;
+    border-radius: 0;
   }
   .drawer-heading h2 {
     font-size: 22px;
   }
   .archive-list {
-    max-height: calc(100dvh - 200px);
+    max-height: calc(100dvh - 190px);
   }
   .archive-thumb {
     width: 44px;
@@ -1395,26 +1417,25 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
   .top-center {
     display: none;
   }
-  /* Show only essential nav pills (Memories hamburger) */
   .top-right .nav-pill:not(:first-child):not(.nav-pill-spotify):not(.nav-pill-ytmusic) {
     display: none;
   }
 
   .hero-content {
-    margin-top: 20vh;
-    padding: 0 12px;
+    top: 34%;
+    padding: 0 10px;
   }
   .hero-title {
-    font-size: clamp(24px, 10vw, 44px) !important;
+    font-size: clamp(22px, 9vw, 42px) !important;
   }
   .hero-title.hindi-classic {
-    font-size: clamp(34px, 16vw, 70px) !important;
+    font-size: clamp(30px, 14vw, 68px) !important;
   }
   .hero-subtitle {
     font-size: 9px;
     letter-spacing: 0.1em;
     padding: 3px 8px;
-    max-width: 85vw;
+    max-width: 90vw;
   }
 
   .edge-arrow-btn {
@@ -1425,11 +1446,14 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
   .edge-arrow-right { right: 6px; }
 
   .tape-player {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 10px;
-    width: calc(100% - 16px);
+    width: calc(100vw - 12px);
     padding: 6px 10px 6px 6px;
-    gap: 8px;
-    border-radius: 16px;
+    gap: 6px;
+    border-radius: 18px;
   }
   .player-vinyl {
     width: 42px;
@@ -1441,26 +1465,24 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
   .player-info .track-artist {
     font-size: 10px;
   }
-  /* Hide seek bar and time on very small phones */
-  .player-seek { display: none; }
-  .player-time { display: none; }
+  .player-seek {
+    height: 6px;
+    margin-top: 3px;
+  }
+  .player-time {
+    font-size: 9px;
+  }
   .play-btn {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
   }
   .ctrl-btn {
     width: 28px;
     height: 28px;
   }
-  /* Hide shuffle, repeat, volume on tiny screens */
-  .player-controls .ctrl-btn:first-child,
-  .player-controls .ctrl-btn:nth-child(5),
-  .player-controls .ctrl-btn:last-child {
-    display: none;
-  }
 
   .memory-indicator {
-    bottom: 72px;
+    bottom: 68px;
     font-size: 10px;
   }
 
@@ -1468,7 +1490,7 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
 
   .social-glass-dock {
     right: 8px;
-    bottom: 68px;
+    bottom: 66px;
     padding: 3px 6px;
     gap: 4px;
   }
@@ -1479,6 +1501,7 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
 
   .memory-drawer {
     width: 100vw;
+    max-width: 100vw;
     border-radius: 0;
     padding: 20px 14px 16px 18px;
   }
@@ -1502,7 +1525,7 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
   .brand-text { font-size: 12px; }
   .top-clock { display: none; }
   .hero-title.hindi-classic {
-    font-size: clamp(28px, 18vw, 60px) !important;
+    font-size: clamp(26px, 15vw, 56px) !important;
   }
   .hero-subtitle { font-size: 8px; }
   .tape-player {
@@ -1519,13 +1542,13 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
 /* ─── Landscape phones ───────────────────────────── */
 @media (max-height: 500px) and (orientation: landscape) {
   .hero-content {
-    margin-top: 8vh;
+    top: 32%;
   }
   .hero-title.hindi-classic {
-    font-size: clamp(28px, 8vw, 60px) !important;
+    font-size: clamp(26px, 7.5vw, 52px) !important;
   }
   .hero-subtitle {
-    margin-top: 6px;
+    margin-top: 4px;
   }
   .edge-arrow-btn {
     width: 36px;
@@ -1535,10 +1558,10 @@ button:focus-visible { outline: 1px solid rgba(255,255,255,.4); outline-offset: 
     bottom: 8px;
   }
   .memory-indicator {
-    bottom: 68px;
+    bottom: 60px;
   }
   .scene-stamp { display: none; }
-  .social-glass-dock { bottom: 60px; }
+  .social-glass-dock { bottom: 56px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
